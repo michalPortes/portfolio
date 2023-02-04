@@ -1,26 +1,17 @@
-import { useEffect, useState } from 'react'
-import { ReadMe } from '../../utils'
-
 import { Title, Container } from './description.styled'
 
 const Description = () => {
 
-  const [readme, setReadme] = useState('')
-
-  useEffect(() => {
-    ReadMe()
-      .then(data => {
-        const content = atob(data.data.content);
-        setReadme(content)
-      })
-      .catch(err => console.log(err))
-  }, [])
-
-  console.log(readme)
   return (
     <Container>
       <Title>Aboult me</Title>
-      <div dangerouslySetInnerHTML={{ __html: readme }} />
+      <h3>Bem vindo ao meu site \o/</h3>
+      <p>
+        Me chamo Michael, sou studante de Ciência da Computação, com histórico de atuação em desenvolvimento de software com o framework Angular e .NET na empresa Embraer S.A;
+        <br />
+        <br />
+        Sou apaixonado por resolver problemas e por isso busco constantemente me atualizar no mundo da tecnologia para entregar os melhores resultados na minha área de atuação, atualmente estou me especializando em React.
+      </p>
     </Container>
   )
 }

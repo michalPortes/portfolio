@@ -8,6 +8,7 @@ export const NavigationConteiner = styled.div`
   display: flex;
   justify-content: space-around;
   background-color: #222222;
+  border-bottom: 1px solid #9e9e9e;
 `
 
 export const Text = styled.h2`

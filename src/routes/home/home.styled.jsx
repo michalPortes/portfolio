@@ -3,14 +3,11 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   
-  height: 100vh;
   background-color:#222222;
-
+  padding-bottom: 4rem;
 `
-export const Text = styled.h2`
-  margin:0 ;
-`
-
-export const Image = styled.img`
-  margin: 0;
+export const AbultMe = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
 `

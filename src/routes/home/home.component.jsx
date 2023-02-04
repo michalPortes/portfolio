@@ -2,15 +2,17 @@ import GitRepositories from '../../components/git-repositories/git-repositories.
 import Image from '../../components/git-image/git-image.component'
 import Description from '../../components/description/description.component'
 
-import { HomeContainer } from './home.styled.jsx'
+import { HomeContainer, AbultMe } from './home.styled.jsx'
 const Home = () => {
 
 
 
   return (
     <HomeContainer>
-      <Image />
-      <Description />
+      <AbultMe>
+        <Image />
+        <Description />
+      </AbultMe>
       <GitRepositories />
     </HomeContainer>
   )

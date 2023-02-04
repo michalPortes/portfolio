@@ -3,8 +3,7 @@ import styled from 'styled-components'
 
 export const ContainerImage = styled.div`
   
-  display: flex;
-  justify-content: space-evenly;
+  display: flex; 
   align-items: center;
 `
 

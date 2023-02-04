@@ -28,10 +28,7 @@ const Navigation = () => {
         </LogoContainer>
         <NavLinks>
           <NavLink to='/home'>
-            Aboult
-          </NavLink>
-          <NavLink to='/home'>
-            Aboult
+            timeline
           </NavLink>
           <NavLink to='/home'>
             Aboult
