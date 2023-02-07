@@ -1,11 +1,6 @@
-import { useState } from 'react'
 import { Container } from './timeline.styled'
 
 const Timeline = () => {
-
-  const [teste, setTeste] = useState([])
-
-
 
   return (
     <Container>

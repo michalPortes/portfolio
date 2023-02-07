@@ -15,18 +15,31 @@ export const ContainerProjects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  
 `
 export const Project = styled.div`
   text-align: left;
   border-radius: 10px;
   padding: .75rem;
-  border: 0.15rem solid #9e9e9e;
+  background-color: #161616 ;
+  border: 0.1rem solid #3f3f3f;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
   cursor: pointer;
+  &:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 12px rgba(158, 158, 158, 0.1);
+  }
+`
+
+export const Link = styled.a`
+  text-decoration: none;
 `
 
 export const Name = styled.h3`
   color: rgb(164, 126, 189);
-  margin: 0px 0px 20px 0px
+  text-decoration: none;
+  margin: 0px 0px 20px 0px;
 `
 
 export const SecondContainer = styled.div`

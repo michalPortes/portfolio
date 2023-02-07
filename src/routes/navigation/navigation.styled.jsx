@@ -6,6 +6,7 @@ export const NavigationConteiner = styled.div`
   height: 70px;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   background-color: #222222;
   border-bottom: 1px solid #9e9e9e;
@@ -21,6 +22,7 @@ export const Span = styled.span`
 `
 
 export const LogoContainer = styled(Link)`
+  display: contents;
   height: 100%;
   padding-left: 5rem;
   text-decoration: none;
