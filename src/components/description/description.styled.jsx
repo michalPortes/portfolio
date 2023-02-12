@@ -36,4 +36,5 @@ export const Paragraph = styled.p`
         width: auto;
         margin-bottom: 10rem;
     }
+    
 `
