@@ -15,11 +15,16 @@ export const ContainerProjects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+
+  @media (max-width: 768px) {
+   grid-template-columns: 1fr;
+  }
   
 `
 export const Project = styled.div`
   text-align: left;
   border-radius: 10px;
+  border-bottom: 4px solid #3f3f3f;
   padding: .75rem;
   background-color: rgba(229, 229, 234, 0.752) ;
   transform: translateZ(0);

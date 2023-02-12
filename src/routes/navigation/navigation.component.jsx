@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Profile } from '../../utils'
 
-import { NavigationConteiner, LogoContainer, Text, Span, NavLinks, NavLink } from './navigation.styled'
+import { NavigationConteiner, LogoContainer, Text, Span, NavLinks, NavLink, MenuMoble, Line } from './navigation.styled'
 
 
 const Navigation = () => {
@@ -34,6 +34,11 @@ const Navigation = () => {
             Laboratory
           </NavLink>
         </NavLinks>
+        <MenuMoble>
+          <Line></Line>
+          <Line></Line>
+          <Line></Line>
+        </MenuMoble>
       </NavigationConteiner>
       <Outlet />
     </Fragment>

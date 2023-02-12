@@ -1,15 +1,20 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
+
+import { Link } from 'react-router-dom'
 
 export const NavigationConteiner = styled.div`
   height: 70px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: rgb(242,242,247);
   border-bottom: 2px solid #9e9e9e49;
+
+  @media (max-width: 768px){
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
 `
 
 export const Text = styled.h2`
@@ -33,6 +38,10 @@ export const NavLinks = styled.div`
   align-items: center;
   justify-content: flex-end;
   height: 100%;
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 export const NavLink = styled(Link)`
   cursor: pointer;
@@ -42,5 +51,24 @@ export const NavLink = styled(Link)`
   transition: 0.3s;
   &:hover{
     color: rgb(0, 0, 0);
+  }
+`
+
+export const MenuMoble = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    cursor: pointer;
+  }
+`
+
+export const Line = styled.span`
+  @media (max-width: 768px) {
+    background-color: black;
+    width: 20px;
+    height: 1px;
+    margin: 3px;
   }
 `

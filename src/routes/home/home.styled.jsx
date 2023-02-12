@@ -10,4 +10,10 @@ export const AbultMe = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 4rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
 `
