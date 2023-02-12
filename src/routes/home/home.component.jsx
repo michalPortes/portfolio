@@ -3,6 +3,8 @@ import Image from '../../components/git-image/git-image.component'
 import Description from '../../components/description/description.component'
 
 import { HomeContainer, AbultMe } from './home.styled.jsx'
+
+
 const Home = () => {
 
 

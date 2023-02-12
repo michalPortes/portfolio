@@ -1,6 +1,6 @@
 import { Profile } from '../../utils'
 import { useState, useEffect } from 'react'
-import { ContainerImage, Img } from './git-image.styled'
+import { ContainerImage, Img, Office } from './git-image.styled'
 
 const Image = () => {
 
@@ -17,6 +17,7 @@ const Image = () => {
   return (
     <ContainerImage>
       <Img src={img.avatar_url} />
+      <Office>Software Developer</Office>
     </ContainerImage>
   )
 }

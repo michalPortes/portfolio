@@ -30,7 +30,7 @@ const GitRepositories = () => {
         {
           list.map((item, index) => {
             return (
-              <Link href={item.html_url} target="_blank">
+              <Link key={index} href={item.html_url} target="_blank">
                 <Project key={index}>
                   <Name >{item.name}</Name>
                   <SecondContainer>

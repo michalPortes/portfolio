@@ -30,8 +30,8 @@ const Navigation = () => {
           <NavLink to='/timeline'>
             timeline
           </NavLink>
-          <NavLink to='/home'>
-            Aboult
+          <NavLink to='/lab'>
+            Laboratory
           </NavLink>
         </NavLinks>
       </NavigationConteiner>

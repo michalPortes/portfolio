@@ -8,17 +8,17 @@ export const NavigationConteiner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #222222;
-  border-bottom: 1px solid #9e9e9e;
+  background-color: rgb(242,242,247);
+  border-bottom: 2px solid #9e9e9e49;
 `
 
 export const Text = styled.h2`
-  color: #820ad1;
+  color: rgb(142,142,147);
   align-items: center;
 `
 
 export const Span = styled.span`
-  color: rgb(164, 126, 189);
+  color: rgb(58, 58, 60);
 `
 
 export const LogoContainer = styled(Link)`
@@ -36,12 +36,11 @@ export const NavLinks = styled.div`
 `
 export const NavLink = styled(Link)`
   cursor: pointer;
-  color:rgb(130, 10, 209);
+  color:rgb(99, 99, 102);
   margin: 10px 15px;
   text-decoration: none;
   transition: 0.3s;
-
   &:hover{
-    color: rgb(164, 126, 189);
+    color: rgb(0, 0, 0);
   }
 `

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   
-  background-color:#222222;
+  background-color:rgb(242,242,247);
   padding-bottom: 4rem;
 `
 export const AbultMe = styled.div`

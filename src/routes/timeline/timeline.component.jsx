@@ -1,13 +1,16 @@
+
+import Works from '../../components/works/works.component'
+
 import { Container } from './timeline.styled'
+
 
 const Timeline = () => {
 
   return (
     <Container>
-      <h1>Timeline</h1>
+      <Works />
     </Container>
   )
 }
-
 
 export default Timeline
