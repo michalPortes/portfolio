@@ -4,13 +4,13 @@ const Description = () => {
 
   return (
     <Container>
-      <Title>Aboult me</Title>
+      <Title>About me</Title>
       <SubTitle>Wellcome my new site \o/</SubTitle>
       <Paragraph>
-        Me chamo Michael, sou studante de Ciência da Computação, com histórico de atuação em desenvolvimento de software com o framework Angular e .NET na empresa Embraer S.A;
+        My name is Michael, I'm a Computer Science student, with a history of working in software development with the Angular framework and .NET at Embraer S.A;
         <br />
         <br />
-        Sou apaixonado por resolver problemas e por isso busco constantemente me atualizar no mundo da tecnologia para entregar os melhores resultados na minha área de atuação, atualmente estou me especializando em React.
+        I am passionate about solving problems and that is why I constantly seek to update myself in the world of technology to deliver the best results in my area of ​​expertise, currently I am specializing in React.
       </Paragraph>
     </Container>
   )

@@ -23,7 +23,7 @@ export const Title = styled.h1`
 `
 export const SubTitle = styled.h3`
     color: rgb(58, 58, 60);
-    margin: 1rem;
+    margin: 1rem 0 1rem 0;
     @media (max-width: 768px) {
         width: auto;
         margin: 3rem  auto 1rem  auto; 

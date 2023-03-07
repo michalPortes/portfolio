@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   align-items: center;
+  padding-bottom: 4rem;
 `
 
 export const Title = styled.h1`
@@ -61,4 +62,16 @@ export const Languages = styled.h6`
 export const DataCreate = styled.h6`
   color: rgba(99, 99, 102, 0.678);
   margin: 10px 0px 5px 0px;
+`
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+`
+
+export const Button = styled.button`
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 `

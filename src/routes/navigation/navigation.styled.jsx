@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-
-
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 export const NavigationConteiner = styled.div`
@@ -70,5 +69,21 @@ export const Line = styled.span`
     width: 20px;
     height: 1px;
     margin: 3px;
+  }
+`
+export const OpenMenu = styled(AiOutlineMenu)`
+  width: 1.3rem; 
+  height: 1.3rem; 
+`
+
+export const MenuClose = styled(AiOutlineClose)`
+  width: 1.3rem;
+  height: 1.3rem; 
+  transition: Transitions 1s all;
+`
+export const Button = styled.button`
+  display: none;
+  @media (max-width: 768px){
+      display: contents;
   }
 `

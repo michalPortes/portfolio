@@ -7,6 +7,8 @@ export const ContainerWork = styled.div`
   justify-content: center;
   width: 60%;
   margin: 0 20% 0 20%;
+  
+
 `
 
 export const Lines = styled.div`
@@ -21,11 +23,21 @@ export const Lines = styled.div`
   &:first-child{
     margin-top: 4rem;
   }
+  
+  @media (max-width: 720px) {
+    
+    align-items: center;
+    flex-direction: column;
+    
+  }
 `
 
 export const Date = styled.h2`
-  margin: 0 60px 0 20px;
+  margin: 0 20px 0 20px;
   color: rgb(99, 99, 102);
+  @media (max-width: 720px) {
+    margin: 0 0 30px 0;
+  }
 `
 
 export const Container = styled.div`
@@ -52,6 +64,12 @@ export const WorkTime = styled.span`
   justify-content: end;
   padding-top: 2rem;
   color:  rgb(99, 99, 102);
+  
+  @media (max-width: 720px) {
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+  }
 `
 
 export const StepTitle = styled.b`
