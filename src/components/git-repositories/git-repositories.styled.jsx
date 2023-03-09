@@ -17,6 +17,12 @@ export const ContainerProjects = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 
+
+  @media (max-width: 952px) {
+   grid-template-columns: 1fr 1fr;
+  }
+  
+
   @media (max-width: 768px) {
    grid-template-columns: 1fr;
   }

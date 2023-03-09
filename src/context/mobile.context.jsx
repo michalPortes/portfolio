@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from 'react'
+import { useState, createContext } from 'react'
 
 export const MobileContext = createContext({
   width: null,
@@ -8,20 +8,8 @@ export const MobileContext = createContext({
 export const MobileProvider = ({ children }) => {
 
 
-  const [width, setWidth] = useState(window.innerWidth)
-  const [mobile, setMobile] = useState(false)
-  const value = { mobile, setMobile }
+  const [showMenu, setShowMenu] = useState(true)
+  const value = { showMenu, setShowMenu }
 
-  useEffect(() => {
-
-    const getMobile = setWidth(window.innerWidth)
-
-    if (width <= 720) {
-      setMobile(true)
-    }
-
-    return getMobile
-  }, [])
-
-  return <MobileProvider.Provider value={value}>{children}</MobileProvider.Provider>
+  return <MobileContext.Provider value={value}>{children}</MobileContext.Provider>
 }

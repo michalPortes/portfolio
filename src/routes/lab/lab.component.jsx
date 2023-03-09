@@ -1,4 +1,6 @@
+import { useContext } from 'react'
 import { useEffect } from 'react'
+import { MobileContext } from '../../context/mobile.context'
 import { Pokemons } from '../../utils'
 
 
@@ -7,6 +9,7 @@ import { Container, Title } from './lab.styled'
 
 const Lab = () => {
 
+  const { showMenu } = useContext(MobileContext)
 
   useEffect(() => {
     Pokemons()
@@ -14,11 +17,18 @@ const Lab = () => {
 
   }, [])
   return (
-    <Container>
-      <Title>
-        Pokemons
-      </Title>
-    </Container>
+    <>{
+      showMenu ?
+        <Container>
+          <Title>
+            Pokemons
+          </Title>
+        </Container>
+        :
+        <>
+        </>
+    }
+    </>
   )
 }
 

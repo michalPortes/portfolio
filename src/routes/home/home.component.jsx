@@ -4,22 +4,31 @@ import Description from '../../components/description/description.component'
 import Footer from '../../components/footer/footer.component'
 
 
-import { HomeContainer, AbultMe } from './home.styled.jsx'
+import { HomeContainer, AbultMe, Div } from './home.styled.jsx'
+import { useContext } from 'react'
+import { MobileContext } from '../../context/mobile.context'
 
 
 const Home = () => {
 
-
+  const { showMenu } = useContext(MobileContext)
 
   return (
-    <HomeContainer>
-      <AbultMe>
-        <Image />
-        <Description />
-      </AbultMe>
-      <GitRepositories />
-      <Footer />
-    </HomeContainer>
+    <>{
+      showMenu ?
+
+        <HomeContainer>
+          <AbultMe>
+            <Image />
+            <Description />
+          </AbultMe>
+          <GitRepositories />
+          <Footer />
+        </HomeContainer>
+        :
+        <Div></Div>
+    }
+    </>
   )
 }
 

@@ -1,12 +1,23 @@
-
-
+import { MobileContainer, NavLinksMobile, NavLinkMobile, Selected } from './navigation.styled'
+import TurnMenu from './navigation.component'
 const MenuMobile = () => {
 
 
+
   return (
-    <div>
-      <h1>menu mobile</h1>
-    </div>
+    <MobileContainer>
+      <NavLinksMobile>
+        <NavLinkMobile to='/' onClick={TurnMenu}>
+          Home
+        </NavLinkMobile>
+        <NavLinkMobile to='/timeline' onClick={TurnMenu}>
+          timeline
+        </NavLinkMobile>
+        <NavLinkMobile to='/lab' onClick={TurnMenu}>
+          Laboratory
+        </NavLinkMobile>
+      </NavLinksMobile>
+    </MobileContainer>
   )
 
 }

@@ -58,8 +58,9 @@ export const MenuMoble = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 3rem;
     cursor: pointer;
+    align-items: end;
   }
 `
 
@@ -86,4 +87,46 @@ export const Button = styled.button`
   @media (max-width: 768px){
       display: contents;
   }
+`
+
+//____________________Mobile Css__________________________________________________
+
+export const MobileContainer = styled.div`
+  display: block;
+  
+`
+
+export const NavLinksMobile = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`
+export const NavLinkMobile = styled(Link)`
+  font-size: 2.5rem;
+  cursor: pointer;
+  color:rgb(99, 99, 102);
+  margin: 40px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+
+  
+  &:hover{
+    color: rgb(0, 0, 0);
+  }
+`
+export const Selected = styled.span`
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: red;
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  transition: width 0.2s;
+  &hover {
+  width: 100%;
+}
 `

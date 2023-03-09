@@ -1,11 +1,13 @@
-import { Container } from './footer.styled'
+import { Container, Text, Span } from './footer.styled'
 import SocialMedia from '../social-media/social-media.component'
 
 const Footer = () => {
 
   return (
     <Container>
-      <h1>Michael🚗</h1>
+      <Text>
+        &lt; <Span>Michael</Span> &frasl;&gt;
+      </Text>
       <SocialMedia />
     </Container>
   )
