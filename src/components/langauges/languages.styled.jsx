@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
+  width: 50%;
   align-items: center;
   flex-direction: column;
 `
@@ -30,10 +31,9 @@ export const IconContainer = styled.div`
   width: 4rem;
   height: 4rem;
   font-size: 2rem;
-  transition: .3s all;
+  transition: .2s all;
   cursor: pointer;
   &:hover{
-    
     font-size: 3rem;
   }
 `

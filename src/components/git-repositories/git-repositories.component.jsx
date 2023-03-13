@@ -16,7 +16,6 @@ const GitRepositories = () => {
   useEffect(() => {
     Repository()
       .then(resp => {
-
         const sortArr = [...resp.data];
 
         sortArr.sort((a, b) => {

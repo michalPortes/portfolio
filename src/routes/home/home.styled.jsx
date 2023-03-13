@@ -19,3 +19,9 @@ export const AbultMe = styled.div`
 export const Div = styled.div`
   display: none;
 `
+
+export const Langue = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
+`

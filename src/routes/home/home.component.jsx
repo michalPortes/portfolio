@@ -3,9 +3,9 @@ import Image from '../../components/git-image/git-image.component'
 import Languages from '../../components/langauges/languages.component'
 import GitRepositories from '../../components/git-repositories/git-repositories.component'
 import Footer from '../../components/footer/footer.component'
+import ReadmeState from '../../components/readme-states/readme-states.component'
 
-
-import { HomeContainer, AbultMe, Div } from './home.styled.jsx'
+import { HomeContainer, AbultMe, Langue, Div } from './home.styled.jsx'
 import { useContext } from 'react'
 import { MobileContext } from '../../context/mobile.context'
 
@@ -23,7 +23,10 @@ const Home = () => {
             <Image />
             <Description />
           </AbultMe>
-          <Languages />
+          <Langue>
+            <ReadmeState />
+            <Languages />
+          </Langue>
           <GitRepositories />
           <Footer />
         </HomeContainer>
