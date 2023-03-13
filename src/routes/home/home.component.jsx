@@ -1,6 +1,7 @@
-import GitRepositories from '../../components/git-repositories/git-repositories.component'
-import Image from '../../components/git-image/git-image.component'
 import Description from '../../components/description/description.component'
+import Image from '../../components/git-image/git-image.component'
+import Languages from '../../components/langauges/languages.component'
+import GitRepositories from '../../components/git-repositories/git-repositories.component'
 import Footer from '../../components/footer/footer.component'
 
 
@@ -22,6 +23,7 @@ const Home = () => {
             <Image />
             <Description />
           </AbultMe>
+          <Languages />
           <GitRepositories />
           <Footer />
         </HomeContainer>

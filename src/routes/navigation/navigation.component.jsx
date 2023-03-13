@@ -23,7 +23,7 @@ const Navigation = () => {
       .catch(resp => resp)
       .finally(resp => resp)
   }, [])
-  console.log(showMenu)
+
 
   const TurnMenu = () => {
 
@@ -41,6 +41,9 @@ const Navigation = () => {
               </Text>
             </LogoContainer>
             <NavLinks>
+              <NavLink to='/'>
+                home
+              </NavLink>
               <NavLink to='/timeline'>
                 timeline
               </NavLink>

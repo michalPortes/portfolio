@@ -1,3 +1,8 @@
+import { FaReact, FaAngular, FaSass } from 'react-icons/fa'
+import { DiJavascript1 } from 'react-icons/di'
+import { SiStyledcomponents } from 'react-icons/si'
+import { TbSql } from 'react-icons/tb'
+
 const axios = require('axios').default
 
 // API's do github
@@ -9,24 +14,56 @@ export const Profile = async () => {
   return await axios.get('https://api.github.com/users/michalPortes')
 }
 
-export const ReadMe = async () => {
-  return await axios.get(
-    'https://api.github.com/repos/michalPortes/michalPortes/readme',
-    {
-      headers: {
-        'Content-Type': 'text/plain; charset=utf-8'
-      }
-    }
-  )
-}
-
 //Poke API
 
 export const Pokemons = async () => {
   return await axios.get(`https://pokeapi.co/api/v2/pokemon/ditto`)
 }
 
+//                               ##############JSONS##############
+
+export const TECH = [
+  {
+    id: 2,
+    name: 'JavaScript',
+    icon: <DiJavascript1 />,
+    URL: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
+  },
+  {
+    id: 1,
+    name: 'React',
+    icon: <FaReact />,
+    URL: 'https://reactjs.org/'
+  },
+
+  {
+    id: 4,
+    name: 'StyledComponents',
+    icon: <SiStyledcomponents />,
+    URL: 'https://styled-components.com/docs'
+  },
+  {
+    id: 5,
+    name: 'Sass',
+    icon: <FaSass />,
+    URL: 'https://sass-lang.com/documentation/'
+  },
+  {
+    id: 2,
+    name: 'SQL',
+    icon: <TbSql />,
+    URL: 'https://docs.oracle.com/en/database/oracle/'
+  },
+  {
+    id: 3,
+    name: 'Angular',
+    icon: <FaAngular />,
+    URL: 'https://angular.io/docs'
+  }
+]
+
 // JSON para a listagem dos trabalhos
+
 export const JOBS = [
   {
     id: 1,
