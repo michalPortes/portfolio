@@ -28,6 +28,13 @@ export const ContainerProjects = styled.div`
   }
   
 `
+
+export const Name = styled.h3`
+  color: rgb(99, 99, 102);
+  text-decoration: none;
+  margin: 0px 0px 20px 0px;
+`
+
 export const Project = styled.div`
   text-align: left;
   border-radius: 10px;
@@ -39,8 +46,13 @@ export const Project = styled.div`
   box-shadow: 0px 0px 12px rgba(142, 142, 147, 0.111);
   cursor: pointer;
   &:hover{
+    border-bottom: 4px solid #2f80ed;
     transform: scale(1.02);
     box-shadow: 0px 0px 12px rgba(158, 158, 158, 0.3);
+
+    ${Name}{
+      color: rgb(47, 128, 237);
+    }
   }
 `
 
@@ -48,11 +60,6 @@ export const Link = styled.a`
   text-decoration: none;
 `
 
-export const Name = styled.h3`
-  color: rgb(99, 99, 102);
-  text-decoration: none;
-  margin: 0px 0px 20px 0px;
-`
 
 export const SecondContainer = styled.div`
   display: flex;
@@ -80,4 +87,8 @@ export const Button = styled.button`
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  transition: all 0.2s;
+  &:hover{
+    color: rgb(47, 128, 237);
+  }
 `

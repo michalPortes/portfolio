@@ -1,6 +1,11 @@
 *{
   margin: 0;
   padding: 0;
+  
+}
+*::selection {
+  color: #2f80ed;
+  background-color: rgba(158, 158, 158, 0.678);
 }
 body {
   margin: 0;

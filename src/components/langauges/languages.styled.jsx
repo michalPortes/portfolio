@@ -21,7 +21,7 @@ export const Link = styled.a`
   color: rgb(99, 99, 102);
 
   &:hover{
-    color: black;
+    color: #2f80ed;
   }
 `
 export const IconContainer = styled.div`
@@ -31,7 +31,7 @@ export const IconContainer = styled.div`
   width: 4rem;
   height: 4rem;
   font-size: 2rem;
-  transition: .2s all;
+  transition: 0.2s all;
   cursor: pointer;
   &:hover{
     font-size: 3rem;

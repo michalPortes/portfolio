@@ -11,6 +11,21 @@ export const ContainerWork = styled.div`
 
 `
 
+export const Title = styled.h3`
+  display: flex;
+  justify-content: center;
+  color: rgb(99, 99, 102);
+  padding-bottom: 1rem;
+`
+
+export const Date = styled.h2`
+  margin: 0 20px 0 20px;
+  color: rgb(99, 99, 102);
+  @media (max-width: 720px) {
+    margin: 0 0 30px 0;
+  }
+`
+
 export const Lines = styled.div`
   display: flex;
   align-items: center;
@@ -23,6 +38,16 @@ export const Lines = styled.div`
   &:first-child{
     margin-top: 4rem;
   }
+  &:hover{
+    border-left: 4px solid #2f80ed;
+
+    ${Title}{
+    color: #2f80ed
+  }
+  ${Date}{
+    color: #2f80ed
+  }
+  }
   
   @media (max-width: 720px) {
     
@@ -32,13 +57,7 @@ export const Lines = styled.div`
   }
 `
 
-export const Date = styled.h2`
-  margin: 0 20px 0 20px;
-  color: rgb(99, 99, 102);
-  @media (max-width: 720px) {
-    margin: 0 0 30px 0;
-  }
-`
+
 
 export const Container = styled.div`
   justify-content: center;
@@ -49,12 +68,7 @@ export const Container = styled.div`
   color: rgb(99, 99, 102);
   `
 
-export const Title = styled.h3`
-  display: flex;
-  justify-content: center;
-  color: rgb(99, 99, 102);
-  padding-bottom: 1rem;
-`
+
 export const Description = styled.span`
   display: flex;
 `

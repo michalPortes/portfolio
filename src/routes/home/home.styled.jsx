@@ -24,4 +24,9 @@ export const Langue = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 4rem;
+  @media (max-width: 952px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 `

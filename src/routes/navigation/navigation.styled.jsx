@@ -19,10 +19,18 @@ export const NavigationConteiner = styled.div`
 export const Text = styled.h2`
   color: rgb(142,142,147);
   align-items: center;
+  transition: 0.2s;
+  &:hover{
+    color: #2f80ed;
+  }
 `
 
 export const Span = styled.span`
   color: rgb(58, 58, 60);
+  transition: 0.2s;
+  &:hover{
+    color: #2f80ed;
+  }
 `
 
 export const LogoContainer = styled(Link)`
@@ -47,9 +55,11 @@ export const NavLink = styled(Link)`
   color:rgb(99, 99, 102);
   margin: 10px 15px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.2s;
+  font-weight: bold;
   &:hover{
-    color: rgb(0, 0, 0);
+    font-size: 15.5px;
+    color: #2f80ed;
   }
 `
 
@@ -113,7 +123,8 @@ export const NavLinkMobile = styled(Link)`
 
   
   &:hover{
-    color: rgb(0, 0, 0);
+    font-size: 39px;
+    color: #2f80ed;
   }
 `
 export const Selected = styled.span`
