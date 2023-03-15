@@ -15,24 +15,25 @@ const Home = () => {
   const { showMenu } = useContext(MobileContext)
 
   return (
-    <>{
-      showMenu ?
+    <>
+      {
+        showMenu ?
 
-        <HomeContainer>
-          <AbultMe>
-            <Image />
-            <Description />
-          </AbultMe>
-          <Langue>
-            <ReadmeState />
-            <Languages />
-          </Langue>
-          <GitRepositories />
-          <Footer />
-        </HomeContainer>
-        :
-        <Div></Div>
-    }
+          <HomeContainer>
+            <AbultMe>
+              <Image />
+              <Description />
+            </AbultMe>
+            <Langue>
+              <ReadmeState />
+              <Languages />
+            </Langue>
+            <GitRepositories />
+            <Footer />
+          </HomeContainer>
+          :
+          <Div></Div>
+      }
     </>
   )
 }
