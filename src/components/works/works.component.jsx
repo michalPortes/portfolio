@@ -16,9 +16,7 @@ const Works = () => {
                 <Title>
                   {item.title}
                 </Title>
-                <Description>
-                  {item.description}
-                </Description>
+                <Description dangerouslySetInnerHTML={{ __html: item.description }} />
                 <WorkTime>
                   <StepTitle>
                     Period:

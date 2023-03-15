@@ -71,8 +71,25 @@ export const JOBS = [
     title: 'Desenvolvedor de Software',
     periodStart: `set de 2022`,
     periodEnd: `a moment`,
-    description: `- Desenvolvimento front-end Web e Mobile tendo como principal linguagem o React, e realizar manutenções para Web nas linguagens Angular | VB.NET.`,
-    tecnologies: `Principais tecnologias: React.Js | JavaScript | Angular | .NET | Oracle SQL Developer | Bootstrap | Pentaho`
+    description: `Desenvolvimento de Aplicativos Web em uma plataforma de análise e modificação de dados, sendo responsável por: 
+                  <br>
+                  <br>
+                  <br>
+                  - Desenvolver e manter a aplicação web, trabalhando tanto no front-end quanto no back-end, para garantir a melhor experiência do usuário e um desempenho eficiente da plataforma.
+                  <br>
+                  <br>
+                  - Gerenciar o fluxo de dados, garantindo que os dados sejam extraídos de forma automatizada do sistema SAP e ajustados com o Pentaho para a integração com a plataforma.
+                  <br>
+                  <br>
+                  - Administrar servidores Windows com robôs de resgate de dados, garantindo a disponibilidade contínua da plataforma.
+                  <br>
+                  <br>
+                  - Trabalhar em colaboração com a equipe de desenvolvimento para garantir que a plataforma atenda às necessidades dos clientes e esteja sempre atualizada com as últimas tecnologias e práticas recomendadas.
+                  <br>
+                  <br>
+                  - Utilização das plataformas de jira e confluence para armazenamento de códigos e documentações.`,
+
+    tecnologies: `Principais tecnologias: JavaScript | React.Js | Angular | .NET | Oracle SQL Developer | Bootstrap | Pentaho`
   },
   {
     id: 2,
