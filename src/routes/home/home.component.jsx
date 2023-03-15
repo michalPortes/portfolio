@@ -16,6 +16,7 @@ const Home = () => {
 
   return (
     <>
+      <title>Menu - Michael</title>
       {
         showMenu ?
 
