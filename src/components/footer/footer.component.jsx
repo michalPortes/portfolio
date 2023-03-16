@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <Container>
       <Text>
-        &lt; <Span>Michael</Span> &frasl;&gt;
+        &lt; <Span>Michael Portes</Span> &frasl;&gt;
       </Text>
       <SocialMedia />
     </Container>
