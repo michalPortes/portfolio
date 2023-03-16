@@ -5,9 +5,14 @@ import styled from 'styled-components'
 export const ContainerWork = styled.div`
   background-color: transparent;
   justify-content: center;
-  width: 60%;
   margin: 0 20% 0 20%;
   
+  @media (max-width: 950px) {
+    margin: 4rem;
+  }
+  @media (max-width: 720px) {
+    margin: 2rem;
+  }
 
 `
 
@@ -29,7 +34,6 @@ export const Date = styled.h2`
 export const Lines = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
   background-color: rgba(229, 229, 234, 0.752) ;
   border-left: 4px solid #3f3f3f;
   border-radius: 10px;
