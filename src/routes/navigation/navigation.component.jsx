@@ -4,8 +4,7 @@ import { Profile } from '../../utils'
 
 import { MobileContext } from '../../context/mobile.context'
 
-
-import { NavigationConteiner, LogoContainer, Text, Span, NavLinks, NavLink, MenuMoble, OpenMenu, MenuClose, Button, NavLinksMobile, NavLinkMobile } from './navigation.styled'
+import { NavigationConteiner, LogoContainer, Text, Span, NavLinks, NavLink, MenuMoble, OpenMenu, MenuClose, Button, MobileContainer, NavLinksMobile, NavLinkMobile } from './navigation.styled'
 
 
 const Navigation = () => {
@@ -57,20 +56,24 @@ const Navigation = () => {
           </NavigationConteiner>
           :
           <>
-            <NavLinksMobile>
-              <Button onClick={TurnMenu} >
+            <Button onClick={TurnMenu}>
+              <MenuMoble>
                 <MenuClose />
-              </Button>
-              <NavLinkMobile to='/' onClick={TurnMenu}>
-                Home
-              </NavLinkMobile>
-              <NavLinkMobile to='/timeline' onClick={TurnMenu}>
-                timeline
-              </NavLinkMobile>
-              <NavLinkMobile to='/lab' onClick={TurnMenu}>
-                Laboratory
-              </NavLinkMobile>
-            </NavLinksMobile>
+              </MenuMoble>
+            </Button>
+            <MobileContainer>
+              <NavLinksMobile>
+                <NavLinkMobile to='/' onClick={TurnMenu}>
+                  Home
+                </NavLinkMobile>
+                <NavLinkMobile to='/timeline' onClick={TurnMenu}>
+                  timeline
+                </NavLinkMobile>
+                <NavLinkMobile to='/lab' onClick={TurnMenu}>
+                  Laboratory
+                </NavLinkMobile>
+              </NavLinksMobile>
+            </MobileContainer>
           </>
       }
       <Outlet />

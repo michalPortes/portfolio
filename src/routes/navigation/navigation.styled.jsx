@@ -96,6 +96,7 @@ export const Button = styled.button`
   display: none;
   @media (max-width: 768px){
       display: contents;
+      justify-content: right;
   }
 `
 
