@@ -24,38 +24,38 @@ export const Pokemons = async () => {
 
 export const TECH = [
   {
-    id: 2,
+    id: 1,
     name: 'JavaScript',
     icon: <DiJavascript1 />,
     URL: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
   },
   {
-    id: 1,
+    id: 2,
     name: 'React',
     icon: <FaReact />,
     URL: 'https://reactjs.org/'
   },
 
   {
-    id: 4,
+    id: 3,
     name: 'StyledComponents',
     icon: <SiStyledcomponents />,
     URL: 'https://styled-components.com/docs'
   },
   {
-    id: 5,
+    id: 4,
     name: 'Sass',
     icon: <FaSass />,
     URL: 'https://sass-lang.com/documentation/'
   },
   {
-    id: 2,
+    id: 5,
     name: 'SQL',
     icon: <TbSql />,
     URL: 'https://docs.oracle.com/en/database/oracle/'
   },
   {
-    id: 3,
+    id: 6,
     name: 'Angular',
     icon: <FaAngular />,
     URL: 'https://angular.io/docs'

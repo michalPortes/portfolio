@@ -16,7 +16,7 @@ const Languages = () => {
         {
           TECH.map((item) => {
             return (
-              <IconContainer>
+              <IconContainer key={item.id}>
                 <Link href={item.URL} target="_blank">
                   {item.icon}
                 </Link>
