@@ -44,10 +44,10 @@ const Navigation = () => {
               <NavLink to='/'>
                 home
               </NavLink>
-              <NavLink to='/timeline'>
+              <NavLink to='timeline'>
                 timeline
               </NavLink>
-              <NavLink to='/lab'>
+              <NavLink to='lab'>
                 Laboratory
               </NavLink>
             </NavLinks>

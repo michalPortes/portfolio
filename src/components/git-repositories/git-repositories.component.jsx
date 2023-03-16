@@ -34,7 +34,7 @@ const GitRepositories = () => {
 
           showMore
             ?
-            list.map((item, index) => {
+            list.map((index, item) => {
               if (index <= 3) {
                 return (
                   <Link key={index} href={item.html_url} target="_blank">
@@ -51,7 +51,7 @@ const GitRepositories = () => {
               }
             })
             :
-            list.map((item, index) => {
+            list.map((index, item) => {
               return (
                 <Link key={index} href={item.html_url} target="_blank">
                   <Project key={index}>
