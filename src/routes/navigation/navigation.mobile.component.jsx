@@ -10,10 +10,10 @@ const MenuMobile = () => {
         <NavLinkMobile to='/' onClick={TurnMenu}>
           Home
         </NavLinkMobile>
-        <NavLinkMobile to='timeline' onClick={TurnMenu}>
+        <NavLinkMobile to='/timeline' onClick={TurnMenu}>
           timeline
         </NavLinkMobile>
-        <NavLinkMobile to='lab' onClick={TurnMenu}>
+        <NavLinkMobile to='/lab' onClick={TurnMenu}>
           Laboratory
         </NavLinkMobile>
       </NavLinksMobile>
