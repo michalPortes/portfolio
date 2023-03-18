@@ -17,17 +17,18 @@ const Lab = () => {
 
   }, [])
   return (
-    <>{
-      showMenu ?
-        <Container>
-          <Title>
-            Pokemons
-          </Title>
-        </Container>
-        :
-        <>
-        </>
-    }
+    <>
+      {
+        showMenu ?
+          <Container>
+            <Title>
+              Pokemons
+            </Title>
+          </Container>
+          :
+          <>
+          </>
+      }
     </>
   )
 }

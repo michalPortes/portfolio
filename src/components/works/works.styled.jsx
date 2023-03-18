@@ -6,7 +6,7 @@ export const ContainerWork = styled.div`
   background-color: transparent;
   justify-content: center;
   margin: 0 20% 0 20%;
-  
+
   @media (max-width: 950px) {
     margin: 4rem;
   }
@@ -21,11 +21,13 @@ export const Title = styled.h3`
   justify-content: center;
   color: rgb(99, 99, 102);
   padding-bottom: 1rem;
+  transition: all 0.3s;
 `
 
 export const Date = styled.h2`
   margin: 0 20px 0 20px;
   color: rgb(99, 99, 102);
+  transition: all 0.3s;
   @media (max-width: 720px) {
     margin: 0 0 30px 0;
   }
@@ -39,16 +41,19 @@ export const Lines = styled.div`
   border-radius: 10px;
   margin: 6rem 0 10rem 0;
   padding: 1rem;
+  transition: all 0.3s;
   &:first-child{
     margin-top: 4rem;
   }
   &:hover{
     border-left: 4px solid #2f80ed;
-
+    transition: all 0.3s;
     ${Title}{
+      transition: all 0.3s;
     color: #2f80ed
   }
   ${Date}{
+    transition: all 0.3s;
     color: #2f80ed
   }
   }

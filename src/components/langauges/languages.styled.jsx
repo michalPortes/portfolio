@@ -34,6 +34,7 @@ export const IconContainer = styled.div`
   transition: 0.2s all;
   cursor: pointer;
   &:hover{
+    transition: 0.2s all;
     font-size: 3rem;
   }
 `

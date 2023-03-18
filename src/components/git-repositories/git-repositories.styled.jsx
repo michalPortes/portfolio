@@ -33,6 +33,7 @@ export const Name = styled.h3`
   color: rgb(99, 99, 102);
   text-decoration: none;
   margin: 0px 0px 20px 0px;
+  transition: all 0.3s;
 `
 
 export const Project = styled.div`
@@ -44,8 +45,10 @@ export const Project = styled.div`
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
   box-shadow: 0px 0px 12px rgba(142, 142, 147, 0.111);
+  transition: all 0.3s;
   cursor: pointer;
   &:hover{
+    transition: all 0.3s;
     border-bottom: 4px solid #2f80ed;
     transform: scale(1.02);
     box-shadow: 0px 0px 12px rgba(158, 158, 158, 0.3);
@@ -89,6 +92,7 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all 0.2s;
   &:hover{
+    transition: all 0.3s;
     color: rgb(47, 128, 237);
   }
 `
