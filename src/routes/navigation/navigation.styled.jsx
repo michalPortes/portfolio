@@ -63,6 +63,40 @@ export const NavLink = styled(Link)`
   }
 `
 
+export const SingIn = styled(Link)`
+  padding: 3px 8px 5px 8px;
+  background-color: #2f80ed;
+  cursor: pointer;
+  color:white;
+  border-radius: 10rem;
+  margin: 10px 15px;
+  text-decoration: none;
+  align-items: center;
+  transition: 0.2s;
+  font-weight: bold;
+  &:hover{
+    padding: 3px 8px 5px 8px;
+    background-color: #cce1fd;
+    font-size: 15.5px;
+    color: #2f80ed;
+  }
+  
+
+  @media (max-width: 768px) {
+    padding: 3px 15px 5px 15px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 40px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover{
+      padding: 3px 15px 5px 15px;
+      font-size: 39px;
+    }
+  }
+`
+
 export const MenuMoble = styled.div`
   display: none;
   @media (max-width: 768px) {
