@@ -4,7 +4,7 @@ import FormInput from '../form-input/form-input.component'
 import { singInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 
 
-import { SingUpContainer, TextHs, ButtonContainer } from './sing-in.styled'
+import { SingUpContainer, TextHs, ButtonContainer, Conteiner } from './sing-in.styled'
 
 
 const defaulFormFields = {
@@ -58,29 +58,32 @@ const SingIn = () => {
 
   return (
     <SingUpContainer>
-      <TextHs>Already have an account?</TextHs>
-      <span>Sing up with your email and password</span>
-      <form onSubmit={handleSubmit}>
-        <FormInput
-          label='Email'
-          type='email'
-          required
-          onChange={handleChange}
-          name='email'
-          value={email}
-        />
+      <Conteiner>
+        <TextHs>Already have an account?</TextHs>
 
-        <FormInput
-          label='Password'
-          type='password'
-          required
-          onChange={handleChange}
-          name='password'
-          value={password}
-        />
-        <ButtonContainer>
-        </ButtonContainer>
-      </form>
+        <span>Sing up with your email and password</span>
+        <form onSubmit={handleSubmit}>
+          <FormInput
+            label='Email'
+            type='email'
+            required
+            onChange={handleChange}
+            name='email'
+            value={email}
+          />
+
+          <FormInput
+            label='Password'
+            type='password'
+            required
+            onChange={handleChange}
+            name='password'
+            value={password}
+          />
+          <ButtonContainer>
+          </ButtonContainer>
+        </form>
+      </Conteiner>
     </SingUpContainer>
   )
 }

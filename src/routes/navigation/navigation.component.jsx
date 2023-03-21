@@ -47,7 +47,7 @@ const Navigation = () => {
               <NavLink to='/lab'>
                 Laboratory
               </NavLink>
-              <SingIn to='/Login'>
+              <SingIn to='/Auth'>
                 Sing In
               </SingIn>
             </NavLinks>

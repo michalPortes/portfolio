@@ -1,4 +1,4 @@
-import { } from './authentication.styled'
+import { Container } from './authentication.styled'
 
 
 import SingIn from '../../components/sing-in/sing-in.component'
@@ -6,9 +6,9 @@ import SingIn from '../../components/sing-in/sing-in.component'
 const Auth = () => {
 
   return (
-    <div>
+    <Container>
       <SingIn />
-    </div>
+    </Container>
   )
 }
 

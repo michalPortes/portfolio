@@ -89,11 +89,12 @@ export const SingIn = styled(Link)`
     margin: 40px 15px;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: none;
 
-    &:hover{
-      padding: 3px 15px 5px 15px;
-      font-size: 39px;
-    }
+      &:hover{
+        padding: 3px 15px 5px 15px;
+        font-size: 39px;
+      }
   }
 `
 
