@@ -1,14 +1,19 @@
 import { Fragment, useEffect, useState, useContext } from 'react'
 import { Outlet } from 'react-router-dom'
-import { Profile } from '../../utils'
+import { Profile } from '../../utils/github/utils'
 
 import { MobileContext } from '../../context/mobile.context'
+import { UserContext } from '../../context/user.context'
+
+import { signOutUser } from '../../utils/firebase/firebase.utils'
+
 
 import { NavigationConteiner, LogoContainer, Text, Span, NavLinks, NavLink, MenuMoble, OpenMenu, MenuClose, Button, MobileContainer, NavLinksMobile, NavLinkMobile, SingIn } from './navigation.styled'
 
 
 const Navigation = () => {
 
+  const { currentUser } = useContext(UserContext)
   const { showMenu, setShowMenu } = useContext(MobileContext)
 
   const [name, setName] = useState('')
@@ -47,9 +52,17 @@ const Navigation = () => {
               <NavLink to='/lab'>
                 Laboratory
               </NavLink>
-              <SingIn to='/Auth'>
-                Sing In
-              </SingIn>
+              {
+                currentUser ? (
+                  <SingIn onClick={signOutUser} >
+                    Sing Out
+                  </SingIn>)
+                  :
+                  (<SingIn to='/Auth'>
+                    Sing In
+                  </SingIn>)
+
+              }
             </NavLinks>
             <Button onClick={TurnMenu}>
               <MenuMoble >

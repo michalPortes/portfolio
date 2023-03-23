@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { TECH } from '../../utils'
+import { TECH } from '../../utils/github/utils'
 
 import { Container, Title, IconContainer, ContainerIcons, Link } from './languages.styled'
 

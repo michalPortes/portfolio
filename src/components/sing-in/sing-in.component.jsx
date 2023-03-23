@@ -1,4 +1,6 @@
 import { useState } from 'react'
+
+import Button from '../button/button.component'
 import FormInput from '../form-input/form-input.component'
 
 import { singInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
@@ -13,6 +15,7 @@ const defaulFormFields = {
 }
 
 const SingIn = () => {
+
 
   const [formFields, setFormFields] = useState(defaulFormFields)
   const { email, password } = formFields;
@@ -36,6 +39,9 @@ const SingIn = () => {
       );
 
       resetFormFields();
+
+      window.location.href('/')
+
     } catch (error) {
       switch (error.code) {
         case 'auth/wrong-password':
@@ -81,6 +87,10 @@ const SingIn = () => {
             value={password}
           />
           <ButtonContainer>
+            <Button type='submit'>Sign In</Button>
+            <Button type='button' buttonType='google' onClick={singInWithGoogle}>
+              Google sign in
+            </Button>
           </ButtonContainer>
         </form>
       </Conteiner>

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import moment from 'moment'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 
-import { Repository } from '../../utils'
+import { Repository } from '../../utils/github/utils'
 
 
 import { Container, Title, ContainerProjects, Project, Link, Name, SecondContainer, Languages, DataCreate, ButtonContainer, Button } from './git-repositories.styled'

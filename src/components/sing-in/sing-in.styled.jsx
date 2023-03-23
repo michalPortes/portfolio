@@ -14,6 +14,9 @@ export const TextHs = styled.h2`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    
+  }
 
 `
 
@@ -27,4 +30,8 @@ export const Conteiner = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 7rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `

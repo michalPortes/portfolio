@@ -1,4 +1,4 @@
-import { JOBS } from '../../utils'
+import { JOBS } from '../../utils/github/utils'
 
 import { ContainerWork, Lines, Date, Container, Title, Description, WorkTime, StepTitle } from './works.styled'
 

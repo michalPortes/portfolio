@@ -1,4 +1,4 @@
-import { Profile } from '../../utils'
+import { Profile } from '../../utils/github/utils'
 import { useState, useEffect } from 'react'
 import { ContainerImage, Img, Office } from './git-image.styled'
 

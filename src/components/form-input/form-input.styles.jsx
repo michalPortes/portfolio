@@ -23,18 +23,18 @@ export const FormInputLabelContainer = styled.label`
   `
 
 export const FormInputContainer = styled.input`
+  display: block;
   background: none;
   background-color: transparent;
   color: ${SubColor};
   font-size: 18px;
   padding: 10px 10px 10px 5px;
-  display: block;
   width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid ${SubColor};
   margin: 25px 0;
-
+  justify-content: center;
   &:focus {
     outline: none;
   }

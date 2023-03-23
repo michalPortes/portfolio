@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useEffect } from 'react'
 import { MobileContext } from '../../context/mobile.context'
-import { Pokemons } from '../../utils'
+import { Pokemons } from '../../utils/github/utils'
 
 
 import { Container, Title } from './lab.styled'
