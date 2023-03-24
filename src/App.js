@@ -5,7 +5,7 @@ import Home from './routes/home/home.component.jsx'
 import Timeline from './routes/timeline/timeline.component.jsx'
 import Lab from './routes/lab/lab.component.jsx'
 import SingIn from './components/sing-in/sing-in.component.jsx'
-
+import CreateUser from './routes/create-user/create-user.component'
 const App = () => {
   return (
     <Routes>
@@ -14,6 +14,7 @@ const App = () => {
         <Route path="timeline" element={<Timeline />} />
         <Route path="lab" element={<Lab />} />
         <Route path="Auth" element={<SingIn />} />
+        <Route path="Create" element={<CreateUser />} />
       </Route>
     </Routes>
   )

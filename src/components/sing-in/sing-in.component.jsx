@@ -6,7 +6,7 @@ import FormInput from '../form-input/form-input.component'
 import { singInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 
 
-import { SingUpContainer, TextHs, ButtonContainer, Conteiner } from './sing-in.styled'
+import { SingUpContainer, LinkAccess, TextHs, ButtonContainer, Conteiner } from './sing-in.styled'
 
 
 const defaulFormFields = {
@@ -93,6 +93,7 @@ const SingIn = () => {
             </Button>
           </ButtonContainer>
         </form>
+        <p>You don't have access <LinkAccess to="/Create">press</LinkAccess></p>
       </Conteiner>
     </SingUpContainer>
   )

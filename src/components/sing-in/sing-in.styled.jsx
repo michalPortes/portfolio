@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 
 export const SingUpContainer = styled.div`
   display: flex;
@@ -14,8 +15,9 @@ export const TextHs = styled.h2`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
   @media (max-width: 768px) {
-    
+    flex-direction: column;
   }
 
 `
@@ -33,5 +35,15 @@ export const Conteiner = styled.div`
 
   @media (max-width: 768px) {
     padding: 1rem;
+  }
+`
+
+export const LinkAccess = styled(Link)`
+  cursor: pointer;
+  text-decoration: none;
+  color: #2f80ed;
+  transition: all 0.3s;
+  &:hover{
+    color: #00357a;
   }
 `
