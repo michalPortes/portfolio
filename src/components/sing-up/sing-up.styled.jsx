@@ -53,3 +53,21 @@ export const LinkAccess = styled(Link)`
     color: #00357a;
   }
 `
+
+export const ConteinerBar = styled.div`
+  border: 1px solid rgb(58, 58, 60);
+  border-radius: 50px;
+  width: 100%;
+  height: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  
+  
+`
+export const ProgressBar = styled.div`
+  
+  background: #2f80ed;
+  border-radius: 50px;
+  height: 100%;
+  transition: all .5s;
+`

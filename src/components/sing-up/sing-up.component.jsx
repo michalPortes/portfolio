@@ -5,7 +5,7 @@ import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component'
 
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils'
 
-import { SingUpContainer, Conteiner, SingUpHs } from './sing-up.styled'
+import { SingUpContainer, Conteiner, SingUpHs, ConteinerBar, ProgressBar } from './sing-up.styled'
 
 
 
@@ -55,10 +55,50 @@ const SingUp = () => {
     setFormFields({ ...formFields, [name]: value });
   }
 
+  const calculateProgress = (event) => {
+
+    let totalValue = 0
+    let parcial = 25
+
+    if (displayName) {
+
+      const nameValue = displayName.split(' ')
+
+      if (nameValue[1]) {
+
+        totalValue += parcial
+      }
+    }
+
+    if (email) {
+
+      let emailValue = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+      if (emailValue.test(email)) {
+
+        totalValue += parcial
+      }
+    }
+    if (password.length >= 6) {
+
+      totalValue += parcial
+    }
+    if (confirmPassword === password && confirmPassword !== '') {
+
+      totalValue += parcial
+    }
+
+    return totalValue
+  }
+
+  calculateProgress()
+
   return (
     <SingUpContainer>
-
       <Conteiner>
+        <ConteinerBar>
+          <ProgressBar style={{ width: `${calculateProgress()}%` }}></ProgressBar>
+        </ConteinerBar>
         <SingUpHs>Don't have an account?</SingUpHs>
         <span>Sing up with your email and password</span>
         <form onSubmit={handleSubmit}>
