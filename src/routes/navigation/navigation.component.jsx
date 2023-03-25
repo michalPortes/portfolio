@@ -88,9 +88,16 @@ const Navigation = () => {
                 <NavLinkMobile to='/lab' onClick={TurnMenu}>
                   Laboratory
                 </NavLinkMobile>
-                <SingIn to='/Auth' onClick={TurnMenu}>
-                  Sing In
-                </SingIn>
+                {
+                  currentUser ? (
+                    <SingIn onClick={signOutUser} >
+                      Sing Out
+                    </SingIn>)
+                    :
+                    (<SingIn to='/Auth' onClick={TurnMenu}>
+                      Sing In
+                    </SingIn>)
+                }
               </NavLinksMobile>
             </MobileContainer>
           </>

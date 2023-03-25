@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 
 import Button from '../button/button.component'
 import FormInput from '../form-input/form-input.component'
-
 import { singInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 
 
@@ -15,7 +14,6 @@ const defaulFormFields = {
 }
 
 const SingIn = () => {
-
 
   const [formFields, setFormFields] = useState(defaulFormFields)
   const { email, password } = formFields;
@@ -64,7 +62,7 @@ const SingIn = () => {
 
   return (
     <SingUpContainer>
-      <Conteiner>
+      < Conteiner >
         <TextHs>Already have an account?</TextHs>
 
         <span>Sing up with your email and password</span>
@@ -94,8 +92,9 @@ const SingIn = () => {
           </ButtonContainer>
         </form>
         <p>You don't have access <LinkAccess to="/Create">press</LinkAccess></p>
-      </Conteiner>
-    </SingUpContainer>
+      </Conteiner >
+    </SingUpContainer >
+
   )
 }
 
