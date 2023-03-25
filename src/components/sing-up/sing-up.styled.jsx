@@ -67,7 +67,7 @@ export const ConteinerBar = styled.div`
 export const ProgressBar = styled.div`
   
   background: #2f80ed;
-  border-radius: 4px;
+  border-radius: 10px;
   height: 100%;
   transition: all .5s;
 `
