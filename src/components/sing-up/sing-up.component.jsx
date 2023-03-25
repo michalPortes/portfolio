@@ -103,7 +103,7 @@ const SingUp = () => {
         <span>Sing up with your email and password</span>
         <form onSubmit={handleSubmit}>
           <FormInput
-            label='Display Name'
+            label='Full name'
             type='text'
             required
             onChange={handleChange}
