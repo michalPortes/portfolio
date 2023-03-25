@@ -55,10 +55,10 @@ export const LinkAccess = styled(Link)`
 `
 
 export const ConteinerBar = styled.div`
-  border: 1px solid rgb(58, 58, 60);
-  border-radius: 4px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 10px;
   width: 100%;
-  height: 10px;
+  height: 15px;
   box-sizing: border-box;
   margin-bottom: 15px;
   
