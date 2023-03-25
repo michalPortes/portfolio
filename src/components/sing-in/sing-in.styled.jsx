@@ -7,6 +7,10 @@ export const SingUpContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   background-color: rgb(242,242,247);
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `
 export const TextHs = styled.h2`
   margin: 10px 0;

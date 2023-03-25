@@ -97,7 +97,24 @@ export const JOBS = [
     title: 'Controlador de produdao (Dev)',
     periodStart: `jun 2021`,
     periodEnd: `set 2022`,
-    description: `- Desenvolvimento de sistema web para geração e análise de documentações.`,
+    description: `Desenvolvedor de automação de sistemas:
+                  <br>
+                  <br>
+                  <br>
+                  - Excel avançado (Automação VBA)
+                  <br>
+                  <br>
+                  - Proficiente em desenvolvimento de scripts SAP utilizando VBA
+                  <br>
+                  <br>
+                  - Forte conhecimento em programação orientada a objetos (POO) e manipulação de objetos SAP
+                  <br>
+                  <br>
+                  - Experiência em integração de dados entre SAP e outras plataformas
+                  <br>
+                  <br>
+                  - Trabalhando em time de PPCP em cima de modelos como Kanban e Scrum`,
+
     tecnologies: `Principais tecnologias: Angular | .NET | Oracle SQL Developer | Bootstrap | Pentaho`
   },
   {
