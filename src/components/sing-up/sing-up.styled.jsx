@@ -6,7 +6,6 @@ export const SingUpContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   background-color: rgb(242,242,247);
   @media (max-width: 768px) {
     height: auto;
@@ -41,6 +40,7 @@ export const Conteiner = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 7rem;
+  margin-bottom: 4rem;
 
   @media (max-width: 768px) {
     padding: 1.5rem 1rem 1rem 1rem;
@@ -73,4 +73,11 @@ export const ProgressBar = styled.div`
   border-radius: 10px;
   height: 100%;
   transition: all .5s;
+`
+
+export const ConteinerForm = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `

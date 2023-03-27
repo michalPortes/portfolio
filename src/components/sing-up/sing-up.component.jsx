@@ -5,7 +5,7 @@ import Button, { BUTTON_TYPES_CLASSES } from '../button/button.component'
 
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils'
 
-import { SingUpContainer, Conteiner, SingUpHs, ConteinerBar, ProgressBar } from './sing-up.styled'
+import { SingUpContainer, Conteiner, SingUpHs, ConteinerBar, ProgressBar, ConteinerForm } from './sing-up.styled'
 
 
 
@@ -101,7 +101,7 @@ const SingUp = () => {
         </ConteinerBar>
         <SingUpHs>Don't have an account?</SingUpHs>
         <span>Sing up with your email and password</span>
-        <form onSubmit={handleSubmit}>
+        <ConteinerForm onSubmit={handleSubmit}>
           <FormInput
             label='Full name'
             type='text'
@@ -139,7 +139,7 @@ const SingUp = () => {
           />
 
           <Button buttonType={BUTTON_TYPES_CLASSES.base} type='submit'>Sign Up</Button>
-        </form>
+        </ConteinerForm>
       </Conteiner>
     </SingUpContainer>
   )

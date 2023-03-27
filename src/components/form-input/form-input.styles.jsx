@@ -29,7 +29,6 @@ export const FormInputContainer = styled.input`
   color: ${SubColor};
   font-size: 18px;
   padding: 10px 10px 10px 5px;
-  width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid ${SubColor};
@@ -46,7 +45,7 @@ export const FormInputContainer = styled.input`
 
 export const Group = styled.div`
   position: relative;
-  margin: 45px 0;
+  margin: 25px 0px;
 
   input[type='password'] {
     letter-spacing: 0.3em;
