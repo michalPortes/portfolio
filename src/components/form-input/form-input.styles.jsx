@@ -30,6 +30,7 @@ export const FormInputContainer = styled.input`
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   border: none;
+  width: 100%;
   border-radius: 0;
   border-bottom: 1px solid ${SubColor};
   margin: 25px 0;
