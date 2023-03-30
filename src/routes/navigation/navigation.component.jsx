@@ -13,7 +13,7 @@ import { NavigationConteiner, LogoContainer, Text, Span, NavLinks, NavLink, Menu
 
 const Navigation = () => {
 
-  const { currentUser } = useContext(UserContext)
+  const { currentUser, setCurrentUser } = useContext(UserContext)
   const { showMenu, setShowMenu } = useContext(MobileContext)
 
   const [name, setName] = useState('')
@@ -30,6 +30,15 @@ const Navigation = () => {
   const TurnMenu = () => {
 
     setShowMenu(!showMenu)
+  }
+
+  const SingOut = () => {
+    signOutUser()
+      .then(() => {
+        localStorage.setItem('token', '')
+        setCurrentUser(false)
+      })
+
   }
   return (
     <Fragment>
@@ -54,7 +63,7 @@ const Navigation = () => {
               </NavLink>
               {
                 currentUser ? (
-                  <SingIn onClick={signOutUser} >
+                  <SingIn onClick={SingOut} >
                     Sing Out
                   </SingIn>)
                   :

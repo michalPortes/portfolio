@@ -1,11 +1,12 @@
 import { useState, useContext } from 'react'
-
+import { Navigate } from 'react-router-dom';
 import Button from '../button/button.component'
 import FormInput from '../form-input/form-input.component'
 import { singInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 
 
 import { SingUpContainer, LinkAccess, TextHs, ButtonContainer, Conteiner } from './sing-in.styled'
+import { UserContext } from '../../context/user.context'
 
 
 const defaulFormFields = {
@@ -15,6 +16,7 @@ const defaulFormFields = {
 
 const SingIn = () => {
 
+  const { currentUser, setCurrentUser } = useContext(UserContext)
   const [formFields, setFormFields] = useState(defaulFormFields)
   const { email, password } = formFields;
 
@@ -36,9 +38,22 @@ const SingIn = () => {
         password
       );
 
-      resetFormFields();
+      localStorage.setItem('token', user.uid)
 
-      window.location.href('/')
+      const token = localStorage.getItem('token')
+
+
+      if (token !== '') {
+
+        setCurrentUser(true)
+        resetFormFields();
+
+        console.log(currentUser)
+
+        return (
+          <Navigate to='/' />
+        )
+      }
 
     } catch (error) {
       switch (error.code) {
