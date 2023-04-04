@@ -42,18 +42,12 @@ const SingIn = () => {
 
       const token = localStorage.getItem('token')
 
+      setCurrentUser(token)
+      resetFormFields();
 
-      if (token !== '') {
+      console.log('Antes do return: ', token)
 
-        setCurrentUser(true)
-        resetFormFields();
-
-        console.log(currentUser)
-
-        return (
-          <Navigate to='/' />
-        )
-      }
+      return (<Navigate to='/' />, console.log('return'))
 
     } catch (error) {
       switch (error.code) {
@@ -106,7 +100,7 @@ const SingIn = () => {
             </Button>
           </ButtonContainer>
         </form>
-        <p>You don't have access <LinkAccess to="/Create">press here</LinkAccess></p>
+        <p>You don't have access <LinkAccess to="create">press here</LinkAccess></p>
       </Conteiner >
     </SingUpContainer >
 

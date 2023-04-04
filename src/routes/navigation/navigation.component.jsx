@@ -33,6 +33,7 @@ const Navigation = () => {
   }
 
   const SingOut = () => {
+
     signOutUser()
       .then(() => {
         localStorage.setItem('token', '')
@@ -67,7 +68,7 @@ const Navigation = () => {
                     Sing Out
                   </SingIn>)
                   :
-                  (<SingIn to='/Auth'>
+                  (<SingIn to='/auth'>
                     Sing In
                   </SingIn>)
 
@@ -99,11 +100,11 @@ const Navigation = () => {
                 </NavLinkMobile>
                 {
                   currentUser ? (
-                    <SingIn onClick={signOutUser} >
+                    <SingIn onClick={SingOut} >
                       Sing Out
                     </SingIn>)
                     :
-                    (<SingIn to='/Auth' onClick={TurnMenu}>
+                    (<SingIn to='/auth' onClick={TurnMenu}>
                       Sing In
                     </SingIn>)
                 }

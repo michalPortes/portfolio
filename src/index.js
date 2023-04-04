@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <MobileProvider>
       <UserProvider>
-        <HashRouter basename="/">
+        <HashRouter>
           <App />
         </HashRouter>
       </UserProvider>
