@@ -5,7 +5,7 @@ const SocialMedia = () => {
     <Container>
       <List>
         <Item >
-          <a target='_blanck' href="https://api.whatsapp.com/send?phone=+55981305028&text=Oi, vim pelo seu portfolio" >
+          <a target='_blanck' href="https://api.whatsapp.com/send?phone=+5512981305028&text=Oi, vim pelo seu portfolio" >
             <Whats />
           </a>
         </Item>
