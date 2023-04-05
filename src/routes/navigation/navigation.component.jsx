@@ -59,8 +59,8 @@ const Navigation = () => {
               <NavLink to='/timeline'>
                 timeline
               </NavLink>
-              <NavLink to='/lab'>
-                Laboratory
+              <NavLink to='/sendemail'>
+                contact
               </NavLink>
               {
                 currentUser ? (
@@ -95,8 +95,8 @@ const Navigation = () => {
                 <NavLinkMobile to='/timeline' onClick={TurnMenu}>
                   timeline
                 </NavLinkMobile>
-                <NavLinkMobile to='/lab' onClick={TurnMenu}>
-                  Laboratory
+                <NavLinkMobile to='/sendemail' onClick={TurnMenu}>
+                  contact
                 </NavLinkMobile>
                 {
                   currentUser ? (
