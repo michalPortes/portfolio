@@ -1,6 +1,8 @@
-import { Container } from './send-email.styled'
 import { useState } from 'react';
 import FormInput from '../form-input/form-input.component';
+import Button from '../button/button.component';
+
+import { Container, Forms, Text } from './send-email.styled'
 
 
 const defaulFormFields = {
@@ -41,24 +43,31 @@ const SendEmail = () => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <FormInput
-        label='Name'
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)} />
-      <FormInput
-        label='Email'
-        type='email'
-        required
-        onChange={handleChange}
-        name='email'
-        value={email}
-      />
-      <FormInput value={message} onChange={(e) => setMessage(e.target.value)} />
+    <Container>
 
-      <button type="submit">Send</button>
-    </form >
+      <Forms onSubmit={handleSubmit}>
+        <div>
+
+          <FormInput
+            label='Name'
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)} />
+          <FormInput
+            label='Email'
+            type='email'
+            required
+            onChange={handleChange}
+            name='email'
+            value={email}
+          />
+        </div>
+
+        <Text value={message} placeholder='Mensage here' onChange={(e) => setMessage(e.target.value)} />
+
+        <Button type="submit" buttonType='google' >Send</Button>
+      </Forms >
+    </Container>
   );
 }
 
